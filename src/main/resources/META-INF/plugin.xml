@@ -1,0 +1,14 @@
+<idea-plugin>
+    <id>com.jetbrains.FocusLab</id>
+    <name>Focus It</name>
+    <vendor email="denis.fokin@gmail.com" url="http://jetbrains.com">JetBrains s.r.o</vendor>
+
+    <description><![CDATA[
+    Experimental features in order to fight focus issues
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationInitializedListener implementation="org.intellij.focuses.FocusLabEP"/>
+    </extensions>
+</idea-plugin>
