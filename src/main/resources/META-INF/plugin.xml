@@ -1,10 +1,13 @@
 <idea-plugin>
-    <id>com.jetbrains.FocusLab</id>
-    <name>Focus It</name>
+    <id>com.jetbrains.FocusTuner</id>
+    <name>Focus Tuner</name>
     <vendor email="denis.fokin@gmail.com" url="http://jetbrains.com">JetBrains s.r.o</vendor>
 
     <description><![CDATA[
-    Experimental features in order to fight focus issues
+        Enables experimental features that deal with various focus issues, for example, when the IDE steals the focus from another application, and other unexpected behavior.
+        <br/>
+        <br/>
+        These features are considered experimental because they may lead to other unexpected problems. Install this plugin only if advised to do so by JetBrains support, and let us know if anything goes wrong.
     ]]></description>
     <depends>com.intellij.modules.platform</depends>
 
