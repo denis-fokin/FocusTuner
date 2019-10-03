@@ -1,2 +1,2 @@
-rootProject.name = "FocusLab"
+rootProject.name = "FocusTuner"
 

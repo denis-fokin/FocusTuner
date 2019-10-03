@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.jetbrains.intellij"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -23,7 +23,10 @@ configure<JavaPluginConvention> {
     sourceCompatibility = JavaVersion.VERSION_1_8
 }
 tasks.getByName<org.jetbrains.intellij.tasks.PatchPluginXmlTask>("patchPluginXml") {
-    changeNotes("""
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>""")
+    pluginDescription("""
+        Enables experimental features that deal with various focus issues, for example, when the IDE steals the focus from another application, and other unexpected behavior.
+        <br/>
+        <br/>
+        These features are considered experimental because they may lead to other unexpected problems. Install this plugin only if advised to do so by JetBrains support, and let us know if anything goes wrong.
+      """)
 }

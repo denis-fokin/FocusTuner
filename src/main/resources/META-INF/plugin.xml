@@ -9,6 +9,6 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationInitializedListener implementation="org.intellij.focuses.FocusLabEP"/>
+        <applicationInitializedListener implementation="org.intellij.focuses.FocusTunerEP"/>
     </extensions>
 </idea-plugin>

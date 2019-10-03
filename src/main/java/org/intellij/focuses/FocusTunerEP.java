@@ -9,7 +9,7 @@ import com.intellij.util.messages.MessageBusConnection;
 
 import java.util.function.Consumer;
 
-public class FocusLabEP implements ApplicationInitializedListener {
+public class FocusTunerEP implements ApplicationInitializedListener {
 
   private boolean suppressFocusStealingInitialValue;
   private boolean suppressFocusStealingLinuxInitialValue;
@@ -53,17 +53,13 @@ public class FocusLabEP implements ApplicationInitializedListener {
       RegistryValue registryValue = Registry.get(keyName);
       valueConsumer.accept(registryValue.asBoolean());
       registryValue.setValue(true);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
+    } catch (Exception e) {}
   }
 
   private void restore(String keyName, boolean initialValue) {
     try {
       // boolean currentValue = Registry.get(keyName).asBoolean();
       Registry.get(keyName).setValue(initialValue);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
+    } catch (Exception e) {}
   }
 }
