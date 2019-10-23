@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "org.jetbrains.intellij"
-version = "1.0.1"
+version = "1.0.2"
 
 repositories {
     mavenCentral()
@@ -18,8 +18,7 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = "193-EAP-SNAPSHOT"
-
+    version = "192.5728.98"
 }
 
 tasks {
